@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Publisher</title>
+</head>
+<body>
+    <h3>Create New Publisher</h3>
+    <form method="post" enctype="multipart/form-data">
+        {%csrf_token%}
+        {{form.as_ul}}
+        <button type="submit">Create</button>
+    </form>
+    <h3>Create New Publisher</h3>
+    <form method="post" enctype="multipart/form-data">
+        {%csrf_token%}
+        {{form.as_table}}
+        <button type="submit">Create</button>
+    </form>
+    <h3>Create New Publisher</h3>
+    <form method="post" enctype="multipart/form-data">
+        {%csrf_token%}
+        {{form.as_p}}
+        <button type="submit">Create</button>
+    </form>
+</body>
+</html>
